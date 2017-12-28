@@ -1,1 +1,1 @@
-"# BazyDanychHibernateJPA" 
+# BazyDanychHibernateJPA
