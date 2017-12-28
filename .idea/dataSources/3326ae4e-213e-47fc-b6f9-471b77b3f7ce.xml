@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jdbc:derby://127.0.0.1/IAlberskaJPAPractice">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.7">
+    <root id="1"/>
+    <schema id="2" parent="1" name="APP">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <table id="13" parent="2" name="ADDRESSNEW"/>
+    <table id="14" parent="2" name="CATEGORY"/>
+    <table id="15" parent="2" name="COMPANY"/>
+    <table id="16" parent="2" name="COMPANYB"/>
+    <table id="17" parent="2" name="CUSTOMERB"/>
+    <table id="18" parent="2" name="CUSTOMERC"/>
+    <table id="19" parent="2" name="PRODUCT"/>
+    <table id="20" parent="2" name="SUPPLIER"/>
+    <table id="21" parent="2" name="SUPPLIERNEW"/>
+    <table id="22" parent="2" name="SUPPLIERXIIB"/>
+    <table id="23" parent="2" name="SUPPLIERXIIC"/>
+    <table id="24" parent="2" name="THISTRANSACTION"/>
+    <table id="25" parent="2" name="THISTRANSACTION_PRODUCT"/>
+    <column id="26" parent="13" name="CITY">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="27" parent="13" name="COUNTRY">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="28" parent="13" name="STREET">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="29" parent="13" name="ID">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="30" parent="13" name="SQL171228182923150">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="31" parent="13" name="FKMHK6H6AKMB0DT3KKPCNAQJBFI">
+      <ColNames>ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>SUPPLIERNEW</RefTableName>
+      <RefKeyName>SQL171228182924000</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="32" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="14" name="CATEGORYNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="34" parent="14" name="SQL171228182923240">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="15" name="DTYPE">
+      <Position>1</Position>
+      <DataType>VARCHAR(31)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="15" name="ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="15" name="CITY">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="38" parent="15" name="COMPANYNAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="39" parent="15" name="COUNTRY">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="40" parent="15" name="STREET">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="41" parent="15" name="DISCOUNT">
+      <Position>7</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+    </column>
+    <column id="42" parent="15" name="BANKACCOUNTNUMBER">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="43" parent="15" name="SQL171228182923340">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="16" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="16" name="CITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="46" parent="16" name="COMPANYNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="47" parent="16" name="COUNTRY">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="48" parent="16" name="STREET">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="49" parent="16" name="SQL171228182923460">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="17" name="DISCOUNT">
+      <Position>1</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="17" name="ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="52" parent="17" name="SQL171228182923580">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="17" name="FKHCXP3048A6Q9ULYUW8IWK8XXF">
+      <ColNames>ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>COMPANYB</RefTableName>
+      <RefKeyName>SQL171228182923460</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="54" parent="18" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="18" name="CITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="56" parent="18" name="COMPANYNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="57" parent="18" name="COUNTRY">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="58" parent="18" name="STREET">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="59" parent="18" name="DISCOUNT">
+      <Position>6</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="60" parent="18" name="SQL171228182923690">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="19" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="19" name="PRODUCTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="63" parent="19" name="UNITSONSTOCK">
+      <Position>3</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="19" name="CATEGORY_ID">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="65" parent="19" name="SUPPLIER_ID">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <key id="66" parent="19" name="SQL171228182923790">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="67" parent="19" name="FKEXQQEAKSNMMKU5PY194YWP140">
+      <ColNames>CATEGORY_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>CATEGORY</RefTableName>
+      <RefKeyName>SQL171228182923240</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="68" parent="19" name="FK29TYO2Q7XO6XHYERO66QNHE6Y">
+      <ColNames>SUPPLIER_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>SUPPLIER</RefTableName>
+      <RefKeyName>SQL171228182923910</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="69" parent="20" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="20" name="CITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="71" parent="20" name="COUNTRY">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="72" parent="20" name="STREET">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="73" parent="20" name="COMPANYNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="74" parent="20" name="SQL171228182923910">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="21" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="21" name="COMPANYNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="77" parent="21" name="SQL171228182924000">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="78" parent="22" name="BANKACCOUNTNUMBER">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="79" parent="22" name="ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="80" parent="22" name="SQL171228182924120">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="81" parent="22" name="FKJ9PXP924AT4IB312DCFS6L40Y">
+      <ColNames>ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>COMPANYB</RefTableName>
+      <RefKeyName>SQL171228182923460</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="82" parent="23" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="23" name="CITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="84" parent="23" name="COMPANYNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="85" parent="23" name="COUNTRY">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="86" parent="23" name="STREET">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="87" parent="23" name="BANKACCOUNTNUMBER">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="88" parent="23" name="SQL171228182924220">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="89" parent="24" name="TRANSACTIONNUMBER">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="24" name="QUANTITY">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="91" parent="24" name="SQL171228182924310">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>TRANSACTIONNUMBER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="92" parent="25" name="TRANSACTIONS_TRANSACTIONNUMBER">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="25" name="PRODUCTS_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="94" parent="25" name="FKATRF0DULHTNVY4UH328Y4OYHY">
+      <ColNames>TRANSACTIONS_TRANSACTIONNUMBER</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>THISTRANSACTION</RefTableName>
+      <RefKeyName>SQL171228182924310</RefKeyName>
+      <RefColNames>TRANSACTIONNUMBER</RefColNames>
+    </foreign-key>
+    <foreign-key id="95" parent="25" name="FKSR8YEER2GYA6DKCIUE25WE5Y">
+      <ColNames>PRODUCTS_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>PRODUCT</RefTableName>
+      <RefKeyName>SQL171228182923790</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
